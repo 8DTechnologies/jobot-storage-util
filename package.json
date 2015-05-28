@@ -1,25 +1,25 @@
 {
   "name": "jobot-storage-util",
   "description": "Hubot script to deal with brain.data",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Samuel Boucher <sboucher@8d.com>",
   "license": "MIT",
-
-  "keywords": ["hubot","hubot-scripts","hubot-storage","jobot"],
-
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "hubot-storage",
+    "jobot"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/8DTechnologies/jobot-storage-util.git"
   },
-
   "bugs": {
     "url": "https://github.com/8DTechnologies/jobot-storage-util/issues"
   },
-
   "dependencies": {
     "coffee-script": "~1.6"
   },
-
   "devDependencies": {
     "mocha": "*",
     "chai": "*",
@@ -30,9 +30,7 @@
     "matchdep": "~0.1.2",
     "grunt-contrib-watch": "~0.5.3"
   },
-
   "main": "index.coffee",
-
   "scripts": {
     "test": "grunt test"
   }
