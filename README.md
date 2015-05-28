@@ -19,6 +19,16 @@ Then add **hubot-jobot-storage-util** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+user1>> hubot show storage
+hubot>> {
+        ,  "users": {
+        ,    "1": {
+        ,      "id": 1,
+        ,      "name": "Shell",
+        ,      "room": "Shell",
+        ,      "type": "chat"
+        ,    }
+        ,   },
+        ,   "_private":{}
+        }
 ```
