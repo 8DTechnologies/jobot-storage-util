@@ -26,7 +26,7 @@ module.exports = (robot) ->
   robot.respond /show storage\s*(\S+)?/i, (msg) ->
 # Return the brain by silting the json into array of lines,
 # then merge the lines in batch of 500, send those batch once at a time.
-# Otherwise the output is way to slow or crash Hubot
+# Otherwise the output is way too slow or it crashes Hubot
     key = msg.match[1]
     steps = 500
     msg.envelope.user.type = 'chat'
