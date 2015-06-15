@@ -35,4 +35,4 @@ hubot>> {
 
 ## License
 
- [MIT](/LICENSE.MD) © [8D Technologies](http://8d.com)
+ [MIT](/LICENSE.md) © [8D Technologies](http://8d.com)
