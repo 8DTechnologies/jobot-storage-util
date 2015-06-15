@@ -32,3 +32,7 @@ hubot>> {
         ,   "_private":{}
         }
 ```
+
+## License
+
+ [MIT](/LICENSE.MD) © [8D Technologies](http://8d.com)

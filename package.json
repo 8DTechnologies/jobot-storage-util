@@ -18,7 +18,7 @@
     "url": "https://github.com/8DTechnologies/jobot-storage-util/issues"
   },
   "dependencies": {
-    "coffee-script": "~1.9"
+    "coffee-script": "~1.6"
   },
   "devDependencies": {
     "mocha": "*",
