@@ -32,12 +32,14 @@ module.exports = (robot) ->
     msg.envelope.user.type = 'chat'
     arrayOfArrayOfMessage = []
     if key and key in Object.keys robot.brain.data['_private']
-      arrayOfData = (JSON.stringify(robot.brain.data['_private'][key], null, 2).split('\n')).map (v)-> "#{v.replace /^,|,$/,""}\n"
+      arrayOfData = (JSON.stringify(robot.brain.data['_private'][key], null, 4).split('\n'))
     else
-      arrayOfData = (JSON.stringify(robot.brain.data, null, 2).split('\n')).map (v)-> "#{v.replace /^,|,$/,""}\n"
+      arrayOfData = (JSON.stringify(robot.brain.data, null, 4).split('\n'))
+      # msg.reply JSON.stringify(robot.brain.data, null, 4).split('\n')
+      # msg.reply ['','b']
     for value, position in arrayOfData
       if arrayOfArrayOfMessage[position//steps]?
         arrayOfArrayOfMessage[position//steps].push value
       else
         arrayOfArrayOfMessage[position//steps] = [value]
-    msg.reply arrayOfMessage for arrayOfMessage in arrayOfArrayOfMessage
+     msg.reply arrayOfMessage.reduce((total,message)->total+="\n"+message) for arrayOfMessage in arrayOfArrayOfMessage
