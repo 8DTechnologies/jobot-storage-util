@@ -20,7 +20,7 @@ Then add **hubot-jobot-storage-util** to your `external-scripts.json`:
 
 ```
 user1>> hubot show storage
-hubot>> Shell: {
+hubot>> {
     "users": {
         "1": {
             "id": 1,
