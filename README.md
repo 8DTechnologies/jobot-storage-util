@@ -20,17 +20,17 @@ Then add **hubot-jobot-storage-util** to your `external-scripts.json`:
 
 ```
 user1>> hubot show storage
-hubot>> {
-        ,  "users": {
-        ,    "1": {
-        ,      "id": 1,
-        ,      "name": "Shell",
-        ,      "room": "Shell",
-        ,      "type": "chat"
-        ,    }
-        ,   },
-        ,   "_private":{}
+hubot>> Shell: {
+    "users": {
+        "1": {
+            "id": 1,
+            "name": "Shell",
+            "room": "Shell",
+            "type": "chat"
         }
+    },
+    "_private": {}
+}
 ```
 
 ## License
