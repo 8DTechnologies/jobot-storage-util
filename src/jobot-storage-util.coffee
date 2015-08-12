@@ -42,4 +42,4 @@ module.exports = (robot) ->
         arrayOfArrayOfMessage[position//steps].push value
       else
         arrayOfArrayOfMessage[position//steps] = [value]
-     msg.reply arrayOfMessage.reduce((total,message)->total+="\n"+message) for arrayOfMessage in arrayOfArrayOfMessage
+     msg.send arrayOfMessage.reduce((total,message)->total+="\n"+message) for arrayOfMessage in arrayOfArrayOfMessage
