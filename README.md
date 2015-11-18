@@ -8,9 +8,9 @@ See [`src/jobot-storage-util.coffee`](src/jobot-storage-util.coffee) for full do
 
 In hubot project repo, run:
 
-`npm install hubot-jobot-storage-util --save`
+`npm install jobot-storage-util --save`
 
-Then add **hubot-jobot-storage-util** to your `external-scripts.json`:
+Then add **jobot-storage-util** to your `external-scripts.json`:
 
 ```json
 ["jobot-storage-util"]
